@@ -1,0 +1,41 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+
+  <form action="about" target="_blank">
+        <button class="btn btn-warning" >Корзина</button>
+  </form>
+    </div>
+
+        <div class="carta_tovara">
+            <!-- Карточка товара -->
+            <div class="card">
+            <!-- Верхняя часть -->
+            <div class="card__top">
+            <!-- Изображение-ссылка товара -->
+            <a href="#" class="card__image">
+            <img src="https://cdn1.ozone.ru/s3/multimedia-h/6155140505.jpg" alt="shapka"/></a>
+            <!-- Скидка на товар -->
+            <div class="card__label">-10%</div>
+        </div>
+                <!-- Нижняя часть -->
+            <div class="card__bottom">
+            <!-- Цены на товар (с учетом скидки и без)-->
+            <div class="card__prices">
+            <div class="card__price card__price--discount">135 000</div>
+            <div class="card__price card__price--common">150 000</div>
+        </div>
+    <!-- Ссылка-название товара -->
+    <a href="#" class="card__title">
+      Супер крутая женская шляпка, красная </a>
+    <!-- Кнопка добавить в корзину -->
+    <button class="card__add">В корзину</button>
+        </div>
+        </div>
+        </div>
+
+    {% endblock %}
